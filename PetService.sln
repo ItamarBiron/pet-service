@@ -1,0 +1,14 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetService.Api", "PetService.Api\PetService.Api.csproj", "{DBAFD3DC-AD06-4BE4-9372-CD1E8A027543}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAFD3DC-AD06-4BE4-9372-CD1E8A027543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAFD3DC-AD06-4BE4-9372-CD1E8A027543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
