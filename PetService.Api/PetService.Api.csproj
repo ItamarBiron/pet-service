@@ -16,5 +16,9 @@
     <ItemGroup>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.3" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\PetService.Core\PetService.Core.csproj" />
+    </ItemGroup>
 
 </Project>

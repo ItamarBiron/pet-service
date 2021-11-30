@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PetService.Core.Services;
+using static PetService.Core.Services.PetService;
 
 namespace PetService.Api
 {
@@ -34,6 +36,7 @@ namespace PetService.Api
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+            services.AddSingleton<IPetService,Core.Services.PetService>();
 
         }
 
