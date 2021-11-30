@@ -2,6 +2,19 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+        <AssemblyName>PetService.Api</AssemblyName>
+        <RootNamespace>PetService.Api</RootNamespace>
+        <PackageId>PetService.Api</PackageId>
+        <Authors>PetService.Api</Authors>
+        <Company>PetService.Api</Company>
+        <Product>PetService.Api</Product>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.3" />
+    </ItemGroup>
 
 </Project>
