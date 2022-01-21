@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PetService.Core.Services
 {
@@ -6,6 +8,7 @@ namespace PetService.Core.Services
     {
         public Task<string> GetAllPetsAsync()
         {
+            throw new KeyNotFoundException();
             return Task.Run(() => "test");
         }
     }

@@ -18,9 +18,10 @@ namespace PetService.Api.Controllers
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetPets()
         {
-            var result = _petService.GetAllPetsAsync();
+            var result = await _petService.GetAllPetsAsync();
             return Ok(result);
         }
         

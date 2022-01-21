@@ -59,8 +59,10 @@ namespace PetService.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            // should be before the UseRouting to catch the response first 
+            app.UseExceptionHandler("/error");
 
+            app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
