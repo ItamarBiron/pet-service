@@ -8,7 +8,7 @@ namespace PetService.Core.Services
     {
         public Task<string> GetAllPetsAsync()
         {
-            throw new KeyNotFoundException();
+            // throw new KeyNotFoundException();
             return Task.Run(() => "test");
         }
     }
